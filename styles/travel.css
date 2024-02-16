@@ -148,7 +148,8 @@ nav li a{
 }
 
 /* destination related styles */
-.destination-container{
+.destination-container,
+.choose-us-container{
     text-align: center;
 }
 
@@ -225,6 +226,40 @@ nav li a{
     font-weight: 800;
 }
 
+/* choose us related styles */
+.card-container{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.card{
+    border-radius: 16px;
+    padding: 16px;
+    max-width: 570px;
+    background-color: rgba(251, 180, 99, 0.1);
+    text-align: left;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#card-2{
+    background-color: rgba(206, 240, 248, 0.7);
+}
+
+#card-3{
+    margin: 24px auto;
+}
+
+.card img{
+    margin-bottom: 32px;
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #131318;
+}
+
 
 
 /* responsive media queries */
@@ -263,7 +298,8 @@ nav li a{
     }
     
     .banner-find-now,
-    .popular-tours-container{
+    .popular-tours-container,
+    .card-container{
         flex-direction: column;
     }
     
@@ -279,7 +315,8 @@ nav li a{
     section{
         margin-top: 25px;
     }
-    .section-title{
+    .section-title,
+    .card-title{
         font-size: 1.25rem;
     }
     
@@ -297,6 +334,11 @@ nav li a{
         grid-template-rows: repeat(7, 280px);
         column-gap: 0;
         row-gap: 20px;
+    }
+
+    .card-container,
+    .section-description{
+        margin-top: 20px;
     }
     
 }
