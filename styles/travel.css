@@ -53,7 +53,7 @@ hr{
     align-items: center;
 }
 
-.nav .logo{
+.logo{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -264,6 +264,29 @@ nav li a{
     font-weight: 800;
     color: #131318;
 }
+/* clients styles */
+.clients h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.clients-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.client{
+    border: 0;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 330px;
+    text-align: center;
+}
+.client img{
+    width: 100px;
+    border-radius: 50%;
+}
+
 
 /* newsletter styles */
 .newsletter{
@@ -323,7 +346,40 @@ nav li a{
     color: #FFFFFF;
 }
 
+/* footer styles */
+footer{
+    margin-top: 100px;
+    height: 500px;
+    padding: 30px;
+    background-color: rgb(247, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content{
+    max-width: 800px;
+    text-align: center;
+}
+.footer-content .logo{
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+    font-size: 24px;
+}
+.social-links a{
+    color: #131318;
+}
+
 /* responsive media queries */
+/* labtop or desktop devices */
+@media screen and (min-width: 992px) {
+    
+}
 /* mobile devices */
 @media screen and (max-width: 600px){
     .nav,
@@ -360,6 +416,7 @@ nav li a{
     
     .banner-find-now,
     .popular-tours-container,
+    .clients-content,
     .card-container,
     .newsletter{
         flex-direction: column;
@@ -367,7 +424,8 @@ nav li a{
     
     .banner-find-now input,
     .banner-find-now select,
-    .banner-find-now .primary-btn{
+    .banner-find-now .primary-btn,
+    .client{
         width: 100%;
     }
 
@@ -378,7 +436,8 @@ nav li a{
         margin-top: 25px;
     }
     .section-title,
-    .card-title{
+    .card-title,
+    .offer h3{
         font-size: 1.25rem;
     }
     
@@ -387,7 +446,8 @@ nav li a{
         width: 100%;
     }
 
-    .popular-tours-container{
+    .popular-tours-container,
+    .clients-content{
         gap: 25px;
     }
     
@@ -399,6 +459,10 @@ nav li a{
         row-gap: 20px;
     }
 
+    /* .clients-content{
+        justify-content: center;
+    } */
+
     .card-container,
     .section-description{
         margin-top: 20px;
@@ -409,7 +473,9 @@ nav li a{
         padding: 10px 20px;
         bottom: 40px;
     }
-    .offer h3{
-        font-size: 1.25rem;
+
+    footer{
+        margin-top: 30px;
+        height: 320px;
     }
 }
